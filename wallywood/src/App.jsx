@@ -1,6 +1,12 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import { MainLayout } from "./layout/MainLayout";
+import { HomePage } from "./pages/HomePage";
+import { PosterPage } from "./pages/PostersPage";
+import { AboutPage } from "./pages/AboutPage";
+import { NotFoundPage } from "./pages/NotFoundPage";
+import { ContactPage } from "./pages/ContactPage";
+import { LoginPage } from "./pages/LoginPage";
 
 function App() {
   return (
@@ -12,7 +18,7 @@ function App() {
           <Route path="/omos" element={<AboutPage />} />
           <Route path="*" element={<NotFoundPage />} />
           <Route path="/kontakt" element={<ContactPage />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/login" element={<LoginPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

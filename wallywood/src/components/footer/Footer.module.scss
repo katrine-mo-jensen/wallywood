@@ -1,0 +1,22 @@
+footer {
+    width: 100%;
+    .footerContainer {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1000px;
+        section{
+            display: flex;
+            justify-content: space-between;
+            p{
+                font-size: 0.875rem;
+                color: #524641;
+            }
+            .address{
+                h6{
+                    font-size: 1rem;
+                    color: #D97852;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+nav {
+  width: 100%;
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    max-width: 1000px;
+    border-bottom: black solid 2px;
+    .name {
+      h1 {
+        font-size: 3rem;
+        text-transform: uppercase;
+        color: #d97852;
+      }
+    }
+    .navbar {
+      .navLinks {
+        color: #524641;
+        margin-left: 40px;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+      .navLinks:hover {
+        color: #d97852;
+      }
+    }
+  }
+}

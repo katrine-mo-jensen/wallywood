@@ -1,12 +1,12 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import { MainLayout } from "./layout/MainLayout";
-import { HomePage } from "./pages/HomePage";
-import { PosterPage } from "./pages/PostersPage";
-import { AboutPage } from "./pages/AboutPage";
-import { NotFoundPage } from "./pages/NotFoundPage";
-import { ContactPage } from "./pages/ContactPage";
-import { LoginPage } from "./pages/LoginPage";
+import { HomePage } from "./pages/home/HomePage";
+import { PosterPage } from "./pages/posters/PostersPage";
+import { AboutPage } from "./pages/about/AboutPage";
+import { NotFoundPage } from "./pages/notFound/NotFoundPage";
+import { ContactPage } from "./pages/contact/ContactPage";
+import { LoginPage } from "./pages/login/LoginPage";
 
 function App() {
   return (

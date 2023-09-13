@@ -1,11 +1,13 @@
 nav {
-  width: 100%;
-  .navigation {
+  max-width: 1080px;
+  background-color: white;
+  .navContainer {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    max-width: 1000px;
+    // max-width: 1000px;
     border-bottom: black solid 2px;
+    
     .name {
       h1 {
         font-size: 3rem;

@@ -4,7 +4,7 @@ export const Footer = () => {
   return (
     <footer>
       <div className={style.footerContainer}>
-        <section >
+        <section className={style.infoBox}>
           <div className={style.address}>
             <h6>Wallywood</h6>
             <p>Øster Uttrupvej 1</p>

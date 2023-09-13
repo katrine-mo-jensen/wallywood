@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export function Navigation() {
   return (
     <nav>
-      <div className={style.navigation}>
+      <div className={style.navContainer}>
         <div className={style.name}>
           <h1>Wallywood</h1>
         </div>

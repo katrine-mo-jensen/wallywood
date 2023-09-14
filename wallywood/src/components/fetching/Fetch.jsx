@@ -1,18 +1,24 @@
 import { useEffect, useState } from "react";
 
-export function Fetching() {
-  const url = "http://localhost:4000/poster/list";
-  const [poster, setPoster] = useState([]);
+
+export function useFetch(url, options) {
+  const [data, setData] = useState();
+  const [error, setError] = useState();
 
   useEffect(() => {
-    function getPoster() {
-      fetch(url)
-        .then((res) => res.json())
-        .then((data) => setPoster(data))
-        .catch((err) => console.error(err));
-      console.log("Poster", poster);
-    }
-    getPoster();
-  }, []);
+    let isFetching = true;
+
+    const getData = () => {
+      if (isFetching) {
+        fetch(url, options)
+          .then((res) => res.json())
+          .then((data) => setData(data))
+          .catch((err) => setError(err));
+      }
+    };
+    getData();
+    return () => (isFetching = false);
+  }, [url]);
+
+  return { data, error };
 }
- 

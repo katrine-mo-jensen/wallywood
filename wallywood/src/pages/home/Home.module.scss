@@ -1,5 +1,5 @@
 .homeContainer {
-  max-width: 1000px;
+  max-width: 1080px;
   background-color: white;
   header {
     .seats {
@@ -8,6 +8,33 @@
       background-size: cover;
       background-repeat: no-repeat;
       display: block;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+  .theLatest {
+    h3 {
+      color: #d97852;
+      font-size: 2em;
+      padding-bottom: 20px;
+    }
+    .displayLatest {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      section {
+        display: flex;
+        h4 {
+          font-size: 1.3rem;
+          color: #524641;
+        }
+        p{
+          font-size: 0.875rem;
+          color: #524641;
+        }
+        img {
+          max-width: 140px;
+        }
+      }
     }
   }
 }

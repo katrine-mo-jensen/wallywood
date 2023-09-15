@@ -16,6 +16,7 @@ export const LoginPage = () => {
     return (
       <>
         <SignUp />
+        
         <button onClick={() => setIsLoginTrue(true)}>Allerede bruger?</button>
       </>
     );

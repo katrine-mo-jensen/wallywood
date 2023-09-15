@@ -1,4 +1,6 @@
+import { useContext } from "react";
 import { useForm } from "react-hook-form";
+import { LoginContext } from "../../components/loginContext/loginContext";
 
 export const Login = () => {
   const {
@@ -6,6 +8,8 @@ export const Login = () => {
     handleSubmit,
     formState: { errors },
   } = useForm();
+
+  const {setUser} = useContext(LoginContext)
 
   const onSubmit = (data) => {
     console.log(data);
@@ -25,7 +29,7 @@ export const Login = () => {
 
     fetch(url, options)
       .then((res) => res.json())
-      .then((data) => console.log(data));
+      .then((data) => setUser(data));
   };
   return (
     <form onSubmit={handleSubmit(onSubmit)}>

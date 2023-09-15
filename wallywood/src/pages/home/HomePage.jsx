@@ -26,7 +26,7 @@ export const HomePage = () => {
                 <div>
                   <h4>{item.name}</h4>
                   <p>Genre: {item.genres[0].title}</p>
-                  <button>Læs mere</button>
+                  <button className={style.btn}>Læs mere</button>
                 </div>
               </section>
             );

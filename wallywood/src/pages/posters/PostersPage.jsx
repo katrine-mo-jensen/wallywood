@@ -27,10 +27,11 @@ export const PosterPage = () => {
 
   return (
     <>
-      <section className={style.posterContainer}>
-        <h1 className={style.headline}>Plakater</h1>
-        <div>
-          <aside className={style.aside}>
+      <section className={style.posterPage}>
+        <div className={style.posterWrapper}>
+        <h2>Plakater</h2>
+        <section >
+          <div className={style.filterContainer}>
             <h3>Filtre</h3>
             <h4>Genres:</h4>
             {genres && (
@@ -40,7 +41,6 @@ export const PosterPage = () => {
                     <li key={index}>
                       <a
                         onClick={() => setSlug(item.slug)}
-                        style={{ cursor: "pointer" }}
                       >
                         {item.title}
                       </a>
@@ -49,14 +49,14 @@ export const PosterPage = () => {
                 })}
               </ul>
             )}
-            <h4 className={style.pricearea}>Prisområde</h4>
+            <h4>Prisområde</h4>
             <div>
               <input type="number" placeholder="0" />
               <p> - </p>
               <input type="number" placeholder="3800" />
             </div>
-          </aside>
-          <figure>
+          </div>
+          <div className={style.PosterContainer}>
             {poster?.map((item, index) => {
               return (
                 <section key={index}>
@@ -67,7 +67,8 @@ export const PosterPage = () => {
                 </section>
               );
             })}
-          </figure>
+          </div>
+        </section>
         </div>
       </section>
     </>

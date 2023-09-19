@@ -16,23 +16,24 @@
           font-size: 0.875;
           color: #524641;
         }
-        ul{
+        ul {
           padding-bottom: 20px;
           list-style-type: none;
-          
-          li{
-            color: #D97852;
+
+          li {
+            color: #d97852;
             font-size: 0.875;
-           padding-bottom: 5px;
+            padding-bottom: 5px;
           }
-          li:hover{
-            color: #5C1F06;
+          li:hover {
+            color: #5c1f06;
             cursor: pointer;
           }
         }
       }
       .posterContainer {
-        border-left: 2px solid #524641;
+        border-left: 2px solid black;
+        padding-left: 20px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 1em;

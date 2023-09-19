@@ -1,11 +1,15 @@
 footer {
   max-width: 1080px;
   background-color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
   .footerContainer {
     max-width: 1000px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    border-top: 2px solid black;
+    padding-top: 10px;
     .infoBox {
       display: grid;
       grid-template-columns: 1fr 1fr;

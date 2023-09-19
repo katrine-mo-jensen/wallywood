@@ -3,11 +3,14 @@
 nav {
   max-width: 1080px;
   background-color: white;
+  
   .navContainer {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    // max-width: 1000px;
+    padding-top: 20px;
+    max-width: 1000px;
+    border-bottom: black solid 2px;
   
     .navbar {
       .navLinks {

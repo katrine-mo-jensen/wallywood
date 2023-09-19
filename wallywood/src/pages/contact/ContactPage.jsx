@@ -16,27 +16,30 @@ export function ContactPage() {
       <div className={style.formContainer}>
         <h2>Kontakt os</h2>
         <form onSubmit={handleSubmit(onSubmit)} className={style.formStyle}>
-          <input
-            type="text"
-            placeholder="Dit navn"
-            {...register("name", { required: true })}
-          />
-          {errors.firstname && <span>This field is required</span>}
-
-          <input
-            type="email"
-            placeholder="Email"
-            {...register("email", { required: true })}
-          />
-          {errors.firstname && <span>This field is required</span>}
-
+          <label>
+            Dit navn:*
+            <input type="text" {...register("name", { required: true })} />
+            {errors.firstname && <span>This field is required</span>}
+          </label>
+          <label>
+            Din email:*
+            <input
+              type="email"
+              
+              {...register("email", { required: true })}
+            />
+            {errors.firstname && <span>This field is required</span>}
+          </label>
+          <label>
+            Din kommentar:*
           <textarea
             name="message"
-            placeholder="Din besked"
+            
             {...register("message", { required: true })}
             cols="30"
             rows="10"
           />
+          </label>
 
           <input
             className={style.btn}

@@ -1,4 +1,5 @@
 import { useForm } from "react-hook-form";
+import style from "../login/LoginPage.module.scss";
 
 export const SignUp = () => {
   const {
@@ -53,7 +54,7 @@ export const SignUp = () => {
         <input type="password" {...register("password", { required: true })} />
         {errors.password && <span>Feltet skal udfyldes</span>}
       </label>
-      <input type="submit" value="Submit" />
+      <input className={style.btn} type="submit" value="Submit" />
     </form>
   );
 };

@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { useForm } from "react-hook-form";
 import { LoginContext } from "../../components/loginContext/loginContext";
+import style from "../login/LoginPage.module.scss";
 
 export const Login = () => {
   const {
@@ -9,7 +10,7 @@ export const Login = () => {
     formState: { errors },
   } = useForm();
 
-  const {setUser} = useContext(LoginContext)
+  const { setUser } = useContext(LoginContext);
 
   const onSubmit = (data) => {
     console.log(data);
@@ -20,7 +21,6 @@ export const Login = () => {
     const body = new URLSearchParams();
     body.append("username", data.username);
     body.append("password", data.password);
- 
 
     const options = {
       metode: "POST",
@@ -43,7 +43,7 @@ export const Login = () => {
         <input type="password" {...register("password", { required: true })} />
         {errors.password && <span>Feltet skal udfyldes</span>}
       </label>
-      <input type="submit" value="Submit" />
+      <input className={style.btn} type="submit" value="Submit" />
     </form>
   );
 };

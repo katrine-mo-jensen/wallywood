@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 
 
 export function useFetch(url, options) {
-  const [data, setData] = useState();
-  const [error, setError] = useState();
+  const [data, setData] = useState([]);
+  const [error, setError] = useState([]);
 
   useEffect(() => {
     let isFetching = true;

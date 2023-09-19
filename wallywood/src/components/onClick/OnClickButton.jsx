@@ -4,6 +4,6 @@ import style from '../onClick/OnClickButton.module.scss'
 export const OnClickButton = ({clickEvent, children}) => {
 
     return(
-        <button className={style.OnClickButton} onClick={clickEvent}>{children}</button>
+        <button className={style.btn} onClick={clickEvent}>{children}</button>
     )
 }

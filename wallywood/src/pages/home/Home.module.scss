@@ -1,7 +1,11 @@
+@import '../../components/globalStyling/Font.module.scss';
+
 .homeContainer {
   max-width: 1080px;
   background-color: white;
   header {
+    border-top: black solid 2px;
+    max-width: 1000px;
     .seats {
       width: 1000px;
       height: 268px;
@@ -13,6 +17,7 @@
     }
   }
   .theLatest {
+    max-width: 1000px;
     h3 {
       color: #d97852;
       font-size: 2em;

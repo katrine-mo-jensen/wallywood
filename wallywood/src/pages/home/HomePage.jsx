@@ -17,7 +17,7 @@ export const HomePage = () => {
       </header>
 
       <section className={style.theLatest}>
-        <h3>Seneste nyt...</h3>
+        <h2>Seneste nyt...</h2>
         <section className={style.displayLatest}>
           {data?.map((item, index) => {
             return (

@@ -1,4 +1,9 @@
 import style from "../Footer/footer.module.scss";
+import facebook from '../../assets/socialIcons/facebook.png'
+import instagram from '../../assets/socialIcons/instagram.png'
+import twitter from '../../assets/socialIcons/twitter.png'
+import pinterest from '../../assets/socialIcons/pinterest.png'
+
 
 export const Footer = () => {
   return (
@@ -17,10 +22,10 @@ export const Footer = () => {
           </div>
         </section>
         <section className={style.socialMedia}>
-          <img src="#" alt="Logo af Pinterest" />
-          <img src="#" alt="Logo af Instagram" />
-          <img src="#" alt="Logo af Facebook" />
-          <img src="#" alt="Logo af Twitter" />
+          <img className={style.icons} src={pinterest} alt="Logo af Pinterest" />
+          <img className={style.icons} src={instagram} alt="Logo af Instagram" />
+          <img className={style.icons} src={facebook} alt="Logo af Facebook" />
+          <img className={style.icons} src={twitter} alt="Logo af Twitter" />
         </section>
       </div>
     </footer>

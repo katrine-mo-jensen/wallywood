@@ -46,7 +46,6 @@ export function ContactPage() {
             type="submit"
             value="Send"
           />
-          <input className={style.btn} type="reset" />
         </form>
       </div>
     </section>

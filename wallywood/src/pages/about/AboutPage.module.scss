@@ -1,14 +1,10 @@
+@import '../../components/globalStyling/Font.module.scss';
+
 .aboutUsContainer {
   max-width: 1080px;
   background-color: white;
   .aboutUs {
     max-width: 1000px;
-    h2 {
-      font-size: 2rem;
-      color: #d97852;
-      padding-bottom: 15px;
-      padding-top: 30px;
-    }
     div {
       display: flex;
       gap: 40px;
